@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tán Crush</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css" id="dcoder_stylesheet">body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    color: #ff6347;
+    font-size: 36px;
+}
+
+.intro {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #888;
+}</style></head>
+<body>
+    <div class="container">
+        <h1 class="header">Chào bạn, Crush của tôi!</h1>
+        <p class="intro">Mình muốn nói rằng bạn thật đặc biệt và mình thật sự rất quý bạn.</p>
+        <button id="complimentBtn">Một lời khen cho bạn 😊</button>
+        <p id="complimentMessage"></p>
+        <footer>
+            <p>Đây là một món quà nhỏ để bạn biết rằng bạn thật sự quan trọng với mình. 😊</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+<script type="text/javascript" id="dcoder_script">document.getElementById('complimentBtn').addEventListener('click', function() {
+    const compliments = [
+        "Bạn có một nụ cười thật tuyệt vời!",
+        "Ánh mắt của bạn luôn khiến tôi xao xuyến!",
+        "Mỗi khi bạn cười, cả thế giới như sáng bừng lên!",
+        "Bạn rất thông minh và tài giỏi, tôi luôn ngưỡng mộ bạn!",
+        "Mỗi ngày tôi đều cảm thấy may mắn khi được gặp bạn!"
+    ];
+    
+    const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+    document.getElementById('complimentMessage').textContent = randomCompliment;
+});</script></body></html>
